@@ -6,6 +6,6 @@ router = routers.DefaultRouter()
 router.register(r'tasks', TaskModelViewSet, basename='task')
 
 urlpatterns = [
-    path('register/', RegisterApiview.as_view(), name='get-token'),
+    path('register/', RegisterApiview.as_view(), name='register'),
     
 ] + router.urls
